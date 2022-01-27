@@ -1,7 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Navbar } from './components';
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Router>
+        <Navbar />
+      </Router>
+    </>
+  );
 };
 
 export default App;
