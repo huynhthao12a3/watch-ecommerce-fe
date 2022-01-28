@@ -1,14 +1,14 @@
 import React from 'react';
-import { Hero } from '../components';
-import { Featured } from '../components/Featured';
+import { Hero, NewProducts, FeaturedProducts } from '../components';
 import Promo from '../components/Promo';
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <Featured/>
-      <Promo/>
+      <FeaturedProducts />
+      <Promo />
+      <NewProducts />
     </>
   );
 };

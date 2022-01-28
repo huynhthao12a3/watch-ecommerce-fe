@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({ product }) => {
+const FeaturedProduct = ({ product, bg }) => {
   const { id, name, price, image } = product;
+  console.log(product);
 
   return (
     <Link to={`/product/${id}`} key={id} className="group relative">
-      <div className="w-full min-h-80 bg-neutral-800 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+      <div
+        className={`w-full min-h-80 ${
+          bg ? bg : 'bg-neutral-800'
+        } aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none`}
+      >
         <img
           src={image}
           alt={name}
@@ -28,4 +33,4 @@ const ProductCard = ({ product }) => {
   );
 };
 
-export default ProductCard;
+export default FeaturedProduct;
