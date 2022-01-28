@@ -4,6 +4,7 @@ import { filteredProducts, filters, sortOptions } from '../data';
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react';
 import Btn from '../components/Btn';
 import ProductGrid from '../components/ProductGrid';
+import ProductList from '../components/ProductList';
 
 const ProductsPage = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -369,7 +370,8 @@ const ProductsPage = () => {
               {/* Product grid/list */}
               <div className="lg:col-span-3">
                 {/* Product Grid */}
-                <ProductGrid products={filteredProducts} />
+                {/* <ProductGrid products={filteredProducts} /> */}
+                <ProductList products={filteredProducts} />
 
                 {/* Product List */}
 
