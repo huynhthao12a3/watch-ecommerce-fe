@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const FeaturedProduct = ({ product, bg }) => {
   const { id, name, price, image } = product;
-  console.log(product);
 
   return (
     <Link to={`/product/${id}`} key={id} className="group relative">

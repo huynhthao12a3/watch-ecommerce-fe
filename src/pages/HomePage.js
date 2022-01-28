@@ -6,7 +6,6 @@ import Promo from '../components/Promo';
 const HomePage = () => {
   return (
     <>
-      <PageHero/>
       <Hero />
       <FeaturedProducts />
       <Promo />

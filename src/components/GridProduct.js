@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NewProduct = ({ product }) => {
+const GridProduct = ({ product }) => {
   const { id, name, price, image } = product;
   return (
     <Link to={`product/${id}`} key={id} className="group">
@@ -20,4 +20,4 @@ const NewProduct = ({ product }) => {
   );
 };
 
-export default NewProduct;
+export default GridProduct;

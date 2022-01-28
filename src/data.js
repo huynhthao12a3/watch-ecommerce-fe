@@ -34,6 +34,8 @@ import product20 from './assets/img/DateJust36.png';
 import product21 from './assets/img/Lady-DateJust.png';
 import product22 from './assets/img/CosmoGraph.png';
 
+import paginator from './utils/paginator';
+
 export const filteredProducts = [
   {
     id: 1,
@@ -521,3 +523,5 @@ export const filters = [
     ],
   },
 ];
+
+// export const paginatedProducts = paginator([...filteredProducts]);
