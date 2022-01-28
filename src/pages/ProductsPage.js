@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import { filteredProducts, filters, sortOptions } from '../data';
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react';
 import Btn from '../components/Btn';
+import ProductGrid from '../components/ProductGrid';
 
 const ProductsPage = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -157,7 +158,7 @@ const ProductsPage = () => {
                     </Disclosure>
                   ))}
 
-                  {/* CLEAR FILTERS BTN */}
+                  {/* Clear filters btn*/}
                   <div className="flex justify-center">
                     <Btn name="Clear filters" />
                   </div>
@@ -368,6 +369,8 @@ const ProductsPage = () => {
               {/* Product grid/list */}
               <div className="lg:col-span-3">
                 {/* Product Grid */}
+                <ProductGrid products={filteredProducts} />
+
                 {/* Product List */}
 
                 {/* Pagination */}
