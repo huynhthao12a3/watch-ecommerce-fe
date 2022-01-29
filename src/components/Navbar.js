@@ -8,9 +8,7 @@ const Navbar = () => {
 
   return (
     <div>
-      {/* px-4 sm:px-6 lg:px-8 */}
-      <div className="px-4 py-5 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"> */}
+      <div className="section-center py-5">
         <div className="relative grid items-center grid-cols-2 lg:grid-cols-3">
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>

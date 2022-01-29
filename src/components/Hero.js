@@ -7,12 +7,13 @@ import product6 from '../assets/img/product5.png';
 import product7 from '../assets/img/product5.png';
 
 import Btn from './Btn';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <div className="relative overflow-hidden  py-0 sm:py-24">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+        <div className="relative section-center sm:static">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
               Summer styles are finally here
@@ -89,7 +90,10 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <Btn name="Shop Collection" to="/products" />
+              {/* <Btn name="Shop Collection" to="/products" /> */}
+              <Link to="products">
+                <Btn name="Shop Collection"/>
+              </Link>
             </div>
           </div>
         </div>

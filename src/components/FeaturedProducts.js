@@ -2,6 +2,7 @@ import SectionTitle from './SectionTitle';
 import { featuredProducts } from '../data';
 import Btn from './Btn';
 import FeaturedProduct from './FeaturedProduct';
+import { Link } from 'react-router-dom';
 
 const FeaturedProducts = () => {
   return (
@@ -16,7 +17,9 @@ const FeaturedProducts = () => {
         </div>
 
         <div>
-          <Btn name="More products" to="/products" />
+          <Link to="/products">
+            <Btn name="More products" />
+          </Link>
         </div>
       </div>
     </section>

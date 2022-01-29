@@ -19,14 +19,14 @@ const FeaturedProduct = ({ product, bg }) => {
       </div>
       <div className="mt-4 flex justify-between">
         <div>
-          <h3 className="text-sm text-primary-700">
+          <h3 className="text-primary-700">
             <p>
               <span aria-hidden="true" className="absolute inset-0" />
               {name}
             </p>
           </h3>
         </div>
-        <p className="text-sm font-medium text-primary-900">${price}</p>
+        <p className="font-medium text-primary-900">${price}</p>
       </div>
     </Link>
   );

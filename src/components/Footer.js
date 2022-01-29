@@ -9,7 +9,7 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="px-4 py-12 mx-auto text-tertiary-300 max-w-7xl sm:px-6 lg:px-16">
+      <div className=" py-12  text-tertiary-300 section-center">
         <div className="flex flex-wrap items-baseline lg:justify-center">
           <span className="mt-2 text-base font-semibold ">
             Copyright © 2021 - {new Date().getFullYear()}

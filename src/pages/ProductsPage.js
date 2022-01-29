@@ -13,7 +13,7 @@ const ProductsPage = () => {
 
   return (
     <>
-      <PageHero />
+      <PageHero title="Products"/>
       <div>
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
           <Dialog
@@ -152,8 +152,7 @@ const ProductsPage = () => {
             </Transition.Child>
           </Dialog>
         </Transition.Root>
-
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="section-center">
           {/* 1 - PRODUCT HEADER + SORTS*/}
           <div className="relative z-10 flex items-baseline justify-between pt-24 pb-6 border-b border-gray-200">
             {/* Products quantity*/}
@@ -322,7 +321,7 @@ const ProductsPage = () => {
 
                 {/* Clear filters btn*/}
                 <div className="mt-5">
-                  <Btn name="Clear filters" to="" />
+                  <Btn name="Clear filters" />
                 </div>
               </form>
 
