@@ -8,6 +8,7 @@ import {
   LoginPage,
   ProductsPage,
   RegisterPage,
+  ShippingPage,
   SingleProductPage,
 } from './pages';
 import CartPage from './pages/CartPage';
@@ -28,6 +29,7 @@ const App = () => {
               path="/product/:id"
               component={SingleProductPage}
             ></Route>
+            <Route exact path="/shipping" component={ShippingPage}></Route>
             <Route exact path="/cart" component={CartPage}></Route>
           </Switch>
         </main>
