@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CartTotals = ({ name, to }) => {
   return (
     <div className="w-full xl:w-4/12 px-4">
-      <div className="p-6 md:p-12 bg-black text-secondary-400">
+      <div className="p-6 md:p-12 bg-tertiary-500 text-secondary-400">
         <h2 className="mb-6 text-4xl font-bold font-heading ">Cart totals</h2>
         <div className="flex mb-8 items-center justify-between pb-5 border-b border-blue-100">
           <span className="font-bold text-lg">Subtotal</span>

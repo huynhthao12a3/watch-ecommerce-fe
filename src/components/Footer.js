@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer
       // className="absolute b-0 h-24"
-      className="w-full bg-tertiary-900 py-12 absolute b-0 mt-auto"
+      className="w-full bg-tertiary-500 py-12 absolute b-0 mt-auto"
       aria-labelledby="footer-heading"
     >
       <div className="section-center  flex items-center justify-center">

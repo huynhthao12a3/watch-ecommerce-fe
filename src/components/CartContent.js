@@ -7,7 +7,7 @@ const CartContent = () => {
   return (
     <>
       <section className="section-center text-center py-14">
-        <h2 className="mb-10 text-4xl md:text-5xl font-bold font-heading">
+        <h2 className="mb-10 text-4xl md:text-5xl font-bold ">
           Your cart
         </h2>
 
@@ -17,22 +17,22 @@ const CartContent = () => {
             {/* Products columns*/}
             <div className="hidden lg:flex w-full">
               <div className="w-full lg:w-3/6 text-center">
-                <h4 className="mb-6 font-bold font-heading text-gray-500">
+                <h4 className="mb-6 font-bold  text-gray-500">
                   Description
                 </h4>
               </div>
               <div className="w-full lg:w-1/6">
-                <h4 className="mb-6 font-bold font-heading text-gray-500">
+                <h4 className="mb-6 font-bold  text-gray-500">
                   Price
                 </h4>
               </div>
               <div className="w-full lg:w-1/6 text-center">
-                <h4 className="mb-6 font-bold font-heading text-gray-500">
+                <h4 className="mb-6 font-bold  text-gray-500">
                   Quantity
                 </h4>
               </div>
               <div className="w-full lg:w-1/6 text-right">
-                <h4 className="mb-6 font-bold font-heading text-gray-500">
+                <h4 className="mb-6 font-bold  text-gray-500">
                   Subtotal
                 </h4>
               </div>
@@ -57,7 +57,7 @@ const CartContent = () => {
                           </div>
                         </div>
                         <div className="w-full md:w-2/3 px-4  text-left">
-                          <h3 className="mb-2 text-xl font-bold font-heading">
+                          <h3 className="mb-2 text-xl font-bold ">
                             {name}
                           </h3>
                           <p className="text-gray-500">{name}</p>
@@ -77,14 +77,14 @@ const CartContent = () => {
 
                     {/* Price*/}
                     <div className="hidden lg:block lg:w-2/12 px-4">
-                      <p className="text-lg text-tertiary-500 font-bold font-heading">
+                      <p className="text-lg text-tertiary-500 font-bold">
                         ${price}
                       </p>
                     </div>
 
                     {/* Amount btns*/}
                     <div className="w-auto md:w-1/6 lg:w-2/12 px-4">
-                      <div className="inline-flex items-center px-4 font-semibold font-heading text-gray-500 border border-gray-200 focus:ring-blue-300 focus:border-blue-300 rounded-md">
+                      <div className="inline-flex items-center px-4 font-semibold text-gray-500 border border-gray-200 focus:ring-blue-300 focus:border-blue-300 rounded-md">
                         <button className="py-2 hover:text-gray-700">
                           <svg
                             width="12"
@@ -138,7 +138,7 @@ const CartContent = () => {
 
                     {/* Subtotal */}
                     <div className="w-auto md:w-1/6 lg:w-2/12 px-4 text-right">
-                      <p className="text-lg text-tertiary-500 font-bold font-heading">
+                      <p className="text-lg text-tertiary-500 font-bold">
                         ${price}
                       </p>
                     </div>

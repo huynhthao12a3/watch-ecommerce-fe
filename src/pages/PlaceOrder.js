@@ -4,15 +4,15 @@ import Steps from '../components/Steps';
 
 const PlaceOrder = () => {
   return (
-    <section className=" min-h-screen ">
+    <section className=" min-h-screen bg-amber-50">
       <Steps />
       <div className="section-center py-12 md:py-16 lg:py-20 ">
-        <h2 className="mb-12 text-5xl font-bold ">Order Summary</h2>
+        <h2 className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold ">Order Summary</h2>
         <div className="flex flex-wrap items-center -mx-4">
           {/* Order summary */}
           <div className="w-full xl:w-8/12 mb-8 xl:mb-0 px-4 ">
             {/* Address */}
-            <div className="mb-12 py-6 border-b border-gray-200">
+            <div className=" py-6 border-b border-gray-200">
               <p className="text-xl font-bold mb-5">Shipping Address</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
@@ -21,12 +21,12 @@ const PlaceOrder = () => {
               </p>
             </div>
             {/* Payment method*/}
-            <div className="mb-12 py-6 border-b border-gray-200">
+            <div className=" py-6 border-b border-gray-200">
               <p className="text-xl font-bold mb-5">Payment method</p>
               <p>Palpal</p>
             </div>
             {/* Order items */}
-            <div className="mb-12 py-6 border-gray-200">
+            <div className=" py-6 border-gray-200">
               <p className="text-xl font-bold mb-5">Order Items</p>
               {/* Item 1*/}
               <div className="flex flex-wrap justify-between items-center mb-6 md:mb-3">

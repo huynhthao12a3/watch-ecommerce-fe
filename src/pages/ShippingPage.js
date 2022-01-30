@@ -5,7 +5,7 @@ import Steps from '../components/Steps';
 const ShippingPage = () => {
   return (
     <>
-      <section className=" bg-tertiary-50 h-screen">
+      <section className=" bg-amber-50 h-screen">
         <Steps />
         <ShippingForm />
       </section>

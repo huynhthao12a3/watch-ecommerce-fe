@@ -34,8 +34,6 @@ import product20 from './assets/img/DateJust36.png';
 import product21 from './assets/img/Lady-DateJust.png';
 import product22 from './assets/img/CosmoGraph.png';
 
-import paginator from './utils/paginator';
-
 export const filteredProducts = [
   {
     id: 1,
@@ -957,3 +955,45 @@ export const cart = [
     price: 2000,
   },
 ];
+
+export const order = {
+  createdAt: '2022-01-30T10:49:19.373Z',
+  isDelivered: true,
+  orderItems: [
+    {
+      amount: 1,
+      color: '#ece6db',
+      id: '61dffddc6e1eace28ef48647',
+      image: product1,
+      name: 'Pearl Master',
+      price: 1000,
+    },
+    {
+      amount: 2,
+      color: '#ece6db',
+      id: '61dffddc6e1eace28ef48647',
+      image: product2,
+      name: 'Day Date 31',
+      price: 1000,
+    },
+  ],
+  paymentMethod: 'PayPal',
+  shippingAddress: {
+    address: '83 duong 51',
+    city: 'Ho Chi Minh',
+    country: 'Vietnam',
+    postalCode: '7000',
+  },
+  shipping_fee: 5,
+  status: 'paid',
+  subtotal: 3000,
+  tax: 150,
+  total: 3155,
+  user: {
+    _id: '61e42e11f7fa844fb4bced8f',
+    name: 'admin',
+    email: 'admin@gmail.com',
+  },
+  _id: '61f66d2ffbe737e542a8b720',
+  deliveredAt: '2022-01-30T10:49:19.373Z',
+};

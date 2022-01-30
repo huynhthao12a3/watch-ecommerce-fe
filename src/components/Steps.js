@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Steps = () => {
   return (
     <nav
-      className="flex py-3 px-5 text-gray-700 bg-tertiary-50 rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 justify-center"
+      className="flex py-3 px-5 text-gray-700 bg-amber-50 rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 justify-center"
       aria-label="Breadcrumb"
     >
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
