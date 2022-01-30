@@ -936,3 +936,24 @@ export const singleProducts = [
     averageRating: 0,
   },
 ];
+
+export const cart = [
+  {
+    id: 1,
+    amount: 1,
+    color: '#E0BFB8',
+    image: product1,
+    max: 15,
+    name: 'Pearl Master',
+    price: 1000,
+  },
+  {
+    id: 2,
+    amount: 2,
+    color: '#E0BFB8',
+    image: product2,
+    max: 15,
+    name: 'Oyster Perpetual',
+    price: 2000,
+  },
+];

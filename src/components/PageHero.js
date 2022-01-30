@@ -9,20 +9,20 @@ const PageHero = ({ title, product }) => {
           <li>
             <Link
               to="/"
-              className="text-tertiary-200
-            hover:text-tertiary-100 mr-2"
+              className="text-secondary-400
+            hover:text-secondary-300 mr-2"
             >
               Home
             </Link>
           </li>
           {product && (
             <Link to="/products">
-              <span className="text-tertiary-200 hover:text-tertiary-100 mr-2">
+              <span className="text-secondary-400 hover:hover:text-secondary-300 mr-2">
                 / Products
               </span>
             </Link>
           )}
-          <li className="text-gray-500">/ {title}</li>
+          <li className="text-secondary-300">/ {title}</li>
         </ol>
       </nav>
     </div>
