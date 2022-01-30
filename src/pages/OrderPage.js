@@ -7,7 +7,7 @@ const OrderPage = () => {
     <section className=" min-h-screen bg-amber-50">
       <Steps />
       <div className="section-center py-12 md:py-16 lg:py-20 ">
-        <h2 className="mb-12 text-5xl font-bold ">Order {order?._id} </h2>
+        <h2 className="mb-12 text-2xl font-bold ">Order {order?._id} </h2>
         <div className="flex flex-wrap items-center -mx-4">
           {/* Order summary */}
           <div className="w-full xl:w-8/12 mb-8 xl:mb-0 px-4 ">

@@ -10,6 +10,7 @@ import {
   PaymentPage,
   PlaceOrder,
   ProductsPage,
+  ProfilePage,
   RegisterPage,
   ShippingPage,
   SingleProductPage,
@@ -32,11 +33,12 @@ const App = () => {
               path="/product/:id"
               component={SingleProductPage}
             ></Route>
+            <Route exact path="/cart" component={CartPage}></Route>
             <Route exact path="/shipping" component={ShippingPage}></Route>
             <Route exact path="/payment" component={PaymentPage}></Route>
             <Route exact path="/placeorder" component={PlaceOrder}></Route>
             <Route exact path="/order/:id" component={OrderPage}></Route>
-            <Route exact path="/cart" component={CartPage}></Route>
+            <Route exact path="/profile" component={ProfilePage}></Route>
           </Switch>
         </main>
         <Footer />
