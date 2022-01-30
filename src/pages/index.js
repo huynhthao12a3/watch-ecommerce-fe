@@ -4,6 +4,7 @@ import SingleProductPage from './SingleProductPage';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import ShippingPage from './ShippingPage';
+import PlaceOrder from './PlaceOrder';
 
 export {
   HomePage,
@@ -12,4 +13,6 @@ export {
   LoginPage,
   RegisterPage,
   ShippingPage,
+ 
+  PlaceOrder,
 };
