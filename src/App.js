@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Navbar } from './components';
 import Footer from './components/Footer';
-import { HomePage, ProductsPage, SingleProductPage } from './pages';
+import { HomePage, LoginPage, ProductsPage, SingleProductPage } from './pages';
 import CartPage from './pages/CartPage';
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
         <main className="min-h-screen">
           <Switch>
             <Route exact path="/" component={HomePage}></Route>
+            <Route exact path="/login" component={LoginPage}></Route>
             <Route exact path="/products" component={ProductsPage}></Route>
             <Route
               exact
