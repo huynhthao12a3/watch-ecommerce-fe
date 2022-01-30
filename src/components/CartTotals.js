@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CartTotals = () => {
+const CartTotals = ({ name, to }) => {
   return (
     <div className="w-full xl:w-4/12 px-4">
       <div className="p-6 md:p-12 bg-black text-secondary-400">
@@ -29,12 +29,10 @@ const CartTotals = () => {
             $100.67
           </span>
         </div>
-        <Link
-          to="/shipping"
-          className="block w-full py-4 bg-secondary-500 hover:bg-secondary-200 hover:text-secondary-900 text-center  font-bold font-heading uppercase rounded-md transition duration-200 text-secondary-50"
-          href="#"
-        >
-          Proceed to Checkout
+        <Link to={to}>
+          <button className="block w-full py-4 bg-secondary-500 hover:bg-secondary-200 hover:text-secondary-900 text-center  font-bold font-heading uppercase rounded-md transition duration-200 text-secondary-50">
+            {name}
+          </button>
         </Link>
       </div>
     </div>

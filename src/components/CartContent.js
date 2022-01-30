@@ -154,7 +154,7 @@ const CartContent = () => {
           </div>
 
           {/* Cart totals */}
-          <CartTotals />
+          <CartTotals name="Proceed to checkout" to="/shipping" />
         </div>
       </section>
     </>

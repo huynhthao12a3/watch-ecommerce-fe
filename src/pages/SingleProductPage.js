@@ -4,6 +4,7 @@ import Btn from '../components/Btn';
 import PageHero from '../components/PageHero';
 import SingleReview from '../components/SingleReview';
 import Stars from '../components/Stars';
+import { Link } from 'react-router-dom';
 
 import { singleProducts } from '../data';
 
@@ -105,9 +106,12 @@ const SingleProductPage = () => {
               <span className="title-font font-medium text-2xl text-gray-900">
                 ${price}
               </span>
-              <button className="flex ml-auto text-white bg-secondary-800 border-0 py-2 px-6 focus:outline-none hover:bg-secondary-900 rounded">
+              <Link
+                to="/cart"
+                className="flex ml-auto text-white bg-secondary-800 border-0 py-2 px-6 focus:outline-none hover:bg-secondary-900 rounded"
+              >
                 Add to cart
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -32,6 +32,7 @@ const App = () => {
               component={SingleProductPage}
             ></Route>
             <Route exact path="/shipping" component={ShippingPage}></Route>
+            <Route exact path="/payment" component={PaymentPage}></Route>
             <Route exact path="/placeorder" component={PlaceOrder}></Route>
             <Route exact path="/cart" component={CartPage}></Route>
           </Switch>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Btn from './Btn';
 
 const ShippingForm = () => {
@@ -70,8 +71,9 @@ const ShippingForm = () => {
             required=""
           />
         </div>
-
-        <Btn name="Submit" />
+        <Link to="/payment">
+          <Btn name="Next" />
+        </Link>
       </form>
     </div>
   );

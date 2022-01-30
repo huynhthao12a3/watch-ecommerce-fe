@@ -82,7 +82,7 @@ const PlaceOrder = () => {
           </div>
 
           {/*Cart totals*/}
-          <CartTotals />
+          <CartTotals name="Place order" to="/order/:id" />
         </div>
       </div>
     </section>
