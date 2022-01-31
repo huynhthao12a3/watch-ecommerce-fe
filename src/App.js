@@ -15,6 +15,7 @@ import {
   ShippingPage,
   SingleProductPage,
   OrderListPage,
+  ProductListPage,
 } from './pages';
 import CartPage from './pages/CartPage';
 
@@ -45,6 +46,11 @@ const App = () => {
               exact
               path="/admin/orderlist"
               component={OrderListPage}
+            ></Route>
+            <Route
+              exact
+              path="/admin/productlist"
+              component={ProductListPage}
             ></Route>
           </Switch>
         </main>

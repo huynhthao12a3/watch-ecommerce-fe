@@ -1200,4 +1200,6 @@ export const orderList = [
   },
 ];
 
-export const paginatedOrders = paginator([...orderList])
+export const paginatedOrders = paginator([...orderList]);
+
+export const paginatedProducts = paginator([...filteredProducts]);

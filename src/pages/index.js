@@ -9,6 +9,7 @@ import PaymentPage from './PaymentPage';
 import OrderPage from './OrderPage';
 import ProfilePage from './ProfilePage';
 import OrderListPage from './OrderListPage';
+import ProductListPage from './ProductListPage';
 
 export {
   HomePage,
@@ -22,4 +23,5 @@ export {
   OrderPage,
   ProfilePage,
   OrderListPage,
+  ProductListPage,
 };
