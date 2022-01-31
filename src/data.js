@@ -1203,3 +1203,152 @@ export const orderList = [
 export const paginatedOrders = paginator([...orderList]);
 
 export const paginatedProducts = paginator([...filteredProducts]);
+
+export const users = [
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+  {
+    email: 'admin@gmail.com',
+    name: 'admin',
+    role: 'admin',
+    _id: '61e42e11f7fa844fb4bced8f',
+  },
+  {
+    email: 'user@gmail.com',
+    name: 'user',
+    role: 'user',
+    _id: '61e42e81f7fa844fb4bcedb2',
+  },
+];
+
+export const paginatedUsers = paginator([...users]);
