@@ -77,7 +77,7 @@ const Navbar = () => {
           </a>
           <ul className="flex items-center hidden ml-auto space-x-8 lg:flex">
             {/* Show Log in & Register btns when user not log in*/}
-            <li>
+            {/* <li>
               <Link
                 to="/cart"
                 aria-label="Cart"
@@ -117,10 +117,10 @@ const Navbar = () => {
               >
                 Register
               </Link>
-            </li>
+            </li> */}
 
             {/* Show dropdown menu when user already log in*/}
-            {/* <li>
+            <li>
               <Link
                 to="/cart"
                 aria-label="Cart"
@@ -140,7 +140,7 @@ const Navbar = () => {
             </li>
             <li className="bg-black text-white">
               <AdminMenu />
-            </li> */}
+            </li>
           </ul>
           <div className="ml-auto lg:hidden">
             <button
@@ -252,7 +252,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       {/* Show Log in & Register btns when user not log in*/}
-                      <li>
+                      {/* <li>
                         <Link
                           to="/login"
                           aria-label="Log in"
@@ -271,12 +271,12 @@ const Navbar = () => {
                         >
                           Register
                         </Link>
-                      </li>
+                      </li> */}
 
                       {/* Show dropdown menu when user already log in*/}
-                      {/* <li className="bg-black text-white">
+                      <li className="bg-black text-white">
                         <AdminMenu />
-                      </li> */}
+                      </li>
                     </ul>
                   </nav>
                 </div>

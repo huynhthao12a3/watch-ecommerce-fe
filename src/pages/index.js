@@ -8,6 +8,7 @@ import PlaceOrder from './PlaceOrder';
 import PaymentPage from './PaymentPage';
 import OrderPage from './OrderPage';
 import ProfilePage from './ProfilePage';
+import OrderListPage from './OrderListPage';
 
 export {
   HomePage,
@@ -20,4 +21,5 @@ export {
   PlaceOrder,
   OrderPage,
   ProfilePage,
+  OrderListPage,
 };
