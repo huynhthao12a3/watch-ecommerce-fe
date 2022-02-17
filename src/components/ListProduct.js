@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { formatPrice } from '../utils/helpers';
 const ListProduct = ({ product }) => {
   const { id, image, name, price, description } = product;
   return (
@@ -19,7 +20,9 @@ const ListProduct = ({ product }) => {
         <p className="mt-2 text-sm text-gray-600 ">{description}</p>
 
         <div className="flex justify-between mt-3 items-center">
-          <h2 className="text-lg font-bold text-gray-700  md:text-xl">${price}</h2>
+          <h2 className="text-lg font-bold text-gray-700  md:text-xl">
+            {formatPrice(price)}
+          </h2>
           <Link
             to={`/product/${id}`}
             className="px-2 py-1 text-xs font-bold text-white uppercase transition-colors duration-200 transform bg-gray-800 rounded  hover:bg-gray-700  focus:outline-none focus:bg-gray-700 "

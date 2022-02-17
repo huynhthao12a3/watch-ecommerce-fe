@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { formatPrice } from '../utils/helpers';
 
 const FeaturedProduct = ({ product, bg }) => {
   const { id, name, price, image } = product;
@@ -9,12 +10,12 @@ const FeaturedProduct = ({ product, bg }) => {
       <div
         className={`w-full min-h-80 ${
           bg ? bg : 'bg-neutral-800'
-        } aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none`}
+        } aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none flex items-center`}
       >
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-center object-cover lg:w-full lg:h-full"
+          className="w-full h-full object-center object-cover"
         />
       </div>
       <div className="mt-4 flex justify-between">
@@ -26,7 +27,7 @@ const FeaturedProduct = ({ product, bg }) => {
             </p>
           </h3>
         </div>
-        <p className="font-medium text-primary-900">${price}</p>
+        <p className="font-medium text-primary-900">{formatPrice(price)}</p>
       </div>
     </Link>
   );

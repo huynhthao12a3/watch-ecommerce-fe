@@ -3,7 +3,7 @@ import ListProduct from './ListProduct';
 const ListView = ({ products }) => {
   return (
     <div className="flex-col">
-      {products.map((product,index) => (
+      {products?.map((product,index) => (
         <ListProduct product={product} key={index} />
       ))}
     </div>

@@ -17,6 +17,9 @@ import {
   OrderListPage,
   ProductListPage,
   UserListPage,
+  ErrorPage,
+  ProductEditPage,
+  UserEditPage,
 } from './pages';
 import CartPage from './pages/CartPage';
 
@@ -55,9 +58,22 @@ const App = () => {
             ></Route>
             <Route
               exact
+              path="/admin/product/:id/edit"
+              component={ProductEditPage}
+            ></Route>
+            <Route
+              exact
               path="/admin/userlist"
               component={UserListPage}
             ></Route>
+            <Route
+              exact
+              path="/admin/user/:id/edit"
+              component={UserEditPage}
+            ></Route>
+            <Route path="*">
+              <ErrorPage />
+            </Route>
           </Switch>
         </main>
         <Footer />

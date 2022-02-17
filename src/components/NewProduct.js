@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { formatPrice } from '../utils/helpers';
 
 const NewProduct = ({ product }) => {
   const { id, name, price, image } = product;
@@ -14,7 +15,7 @@ const NewProduct = ({ product }) => {
       </div>
       <div className="flex-col items-center justify-center">
         <h3 className="mt-4  text-gray-700">{name}</h3>
-        <p className="mt-1  font-medium text-gray-900">${price}</p>
+        <p className="mt-1  font-medium text-gray-900">{formatPrice(price)}</p>
       </div>
     </Link>
   );

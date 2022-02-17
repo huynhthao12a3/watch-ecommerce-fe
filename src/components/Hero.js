@@ -1,10 +1,10 @@
-import product1 from '../assets/img/product1.png';
-import product2 from '../assets/img/product2.png';
-import product3 from '../assets/img/product3.png';
-import product4 from '../assets/img/product4.png';
-import product5 from '../assets/img/product5.png';
-import product6 from '../assets/img/product5.png';
-import product7 from '../assets/img/product5.png';
+import product1 from '../assets/img/hero-1.png';
+import product2 from '../assets/img/hero-2.png';
+import product3 from '../assets/img/hero-3.png';
+import product4 from '../assets/img/hero-4.png';
+import product5 from '../assets/img/hero-5.png';
+import product6 from '../assets/img/hero-6.png';
+import product7 from '../assets/img/hero-7.png';
 
 import Btn from './Btn';
 import { Link } from 'react-router-dom';
@@ -90,9 +90,8 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              {/* <Btn name="Shop Collection" to="/products" /> */}
               <Link to="products">
-                <Btn name="Shop Collection"/>
+                <Btn name="Shop Collection" />
               </Link>
             </div>
           </div>

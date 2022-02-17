@@ -10,4 +10,27 @@ html {
   .section-center {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  .valid {
+    @apply text-green-400 ml-1;
+  }
+  .invalid {
+    @apply text-red-400 ml-1;
+  }
+  .hide {
+    @apply hidden;
+  }
+  .instructions {
+    @apply text-xs rounded-lg bg-tertiary-700 text-white p-1 relative -bottom-3.5;
+  }
+  .offscreen {
+    @apply absolute -left-[9999px];
+  }
 }
+/* font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px; */

@@ -1,16 +1,20 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import UserMenu from './UserMenu';
 import AdminMenu from './AdminMenu';
+import { useProductsContext } from '../context/products_context';
+import { useUserContext } from '../context/user_context';
+import CartBtn from './CartBtn';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isMenuOpen, openMenu, closeMenu } = useProductsContext();
+  const { loginUser} = useUserContext();
 
   return (
     <div>
       <div className="section-center py-5">
         <div className="relative grid items-center grid-cols-2 lg:grid-cols-3">
-          <ul className="flex items-center hidden space-x-8 lg:flex">
+          {/* Left links */}
+          <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
@@ -23,7 +27,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#features"
+                href="/#features"
                 aria-label="Our featured products"
                 title="Our featured products"
                 className="font-medium tracking-wide  transition-colors duration-200 hover:text-teal-accent-400"
@@ -33,7 +37,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#new"
+                href="/#new"
                 aria-label="Our new product"
                 title="Our new product"
                 className="font-medium tracking-wide  transition-colors duration-200 hover:text-teal-accent-400"
@@ -52,6 +56,8 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+
+          {/* Logo */}
           <a
             href="/"
             aria-label="HomePage"
@@ -75,79 +81,53 @@ const Navbar = () => {
               Reverie
             </span>
           </a>
-          <ul className="flex items-center hidden ml-auto space-x-8 lg:flex">
-            {/* Show Log in & Register btns when user not log in*/}
-            {/* <li>
-              <Link
-                to="/cart"
-                aria-label="Cart"
-                title="Cart"
-                className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                 
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/login"
-                aria-label="Log in"
-                title="Log in"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-              >
-                Log in
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/register"
-                aria-label="Register"
-                title="Register"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-              >
-                Register
-              </Link>
-            </li> */}
 
-            {/* Show dropdown menu when user already log in*/}
+          {/* Right links */}
+          <ul className="items-center hidden ml-auto space-x-8 lg:flex">
             <li>
-              <Link
-                to="/cart"
-                aria-label="Cart"
-                title="Cart"
-                className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </Link>
+              <CartBtn />
             </li>
-            <li className="bg-black text-white">
-              <AdminMenu />
-            </li>
+            {loginUser ? (
+              <>
+                <li className="bg-black text-white">
+                  {loginUser.role === 'admin' ? <AdminMenu /> : <UserMenu />}
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link
+                    to="/login"
+                    aria-label="Log in"
+                    title="Log in"
+                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    onClick={closeMenu}
+                  >
+                    Log in
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/register"
+                    aria-label="Register"
+                    title="Register"
+                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    onClick={closeMenu}
+                  >
+                    Register
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
+
+          {/* Mobile Nav */}
           <div className="ml-auto lg:hidden">
             <button
               aria-label="Open Menu"
               title="Open Menu"
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
-              onClick={() => setIsMenuOpen(true)}
+              onClick={() => openMenu()}
             >
               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                 <path
@@ -168,6 +148,7 @@ const Navbar = () => {
               <div className="absolute top-0 left-0 w-full z-50">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
+                    {/* Reverie logo,name */}
                     <div>
                       <a
                         href="/"
@@ -193,12 +174,14 @@ const Navbar = () => {
                         </span>
                       </a>
                     </div>
+
+                    {/* Close menu btn */}
                     <div>
                       <button
                         aria-label="Close Menu"
                         title="Close Menu"
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={closeMenu}
                       >
                         <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                           <path
@@ -210,7 +193,8 @@ const Navbar = () => {
                     </div>
                   </div>
                   <nav>
-                    <ul className="space-y-4">
+                    <ul className="space-y-4 flex-col">
+                      {/* Home */}
                       <li>
                         <a
                           href="/"
@@ -221,9 +205,11 @@ const Navbar = () => {
                           Home
                         </a>
                       </li>
+
+                      {/* Features */}
                       <li>
                         <a
-                          href="#features"
+                          href="/#features"
                           aria-label="Our featured products"
                           title="Our featured products"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -231,19 +217,24 @@ const Navbar = () => {
                           Features
                         </a>
                       </li>
+
+                      {/* New */}
                       <li>
-                        <Link
-                          href="#new"
+                        <a
+                          href="/#new"
                           aria-label="Our new product"
                           title="Our new product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           New
-                        </Link>
+                        </a>
                       </li>
+
+                      {/* Products */}
                       <li>
                         <Link
                           to="/products"
+                          onClick={closeMenu}
                           aria-label="All products"
                           title="All products"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -251,32 +242,49 @@ const Navbar = () => {
                           Products
                         </Link>
                       </li>
-                      {/* Show Log in & Register btns when user not log in*/}
-                      {/* <li>
-                        <Link
-                          to="/login"
-                          aria-label="Log in"
-                          title="Log in"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Login
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/register"
-                          aria-label="Register"
-                          title="Register"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Register
-                        </Link>
-                      </li> */}
 
-                      {/* Show dropdown menu when user already log in*/}
-                      <li className="bg-black text-white">
-                        <AdminMenu />
+                      {/* Cart */}
+                      <li className="inline-block">
+                        <CartBtn />
                       </li>
+
+                      {/* Dropdown menu OR login, logout btns */}
+                      {loginUser ? (
+                        <>
+                          <li className="bg-black text-white max-w-min">
+                            {loginUser.role === 'admin' ? (
+                              <AdminMenu />
+                            ) : (
+                              <UserMenu />
+                            )}
+                          </li>
+                        </>
+                      ) : (
+                        <>
+                          <li>
+                            <Link
+                              to="/login"
+                              aria-label="Log in"
+                              title="Log in"
+                              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                              onClick={closeMenu}
+                            >
+                              Log in
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/register"
+                              aria-label="Register"
+                              title="Register"
+                              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                              onClick={closeMenu}
+                            >
+                              Register
+                            </Link>
+                          </li>
+                        </>
+                      )}
                     </ul>
                   </nav>
                 </div>

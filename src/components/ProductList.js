@@ -2,10 +2,15 @@ import React, { useEffect, useState } from 'react';
 import GridView from './GridView';
 import ListView from './ListView';
 import { useHistory } from 'react-router-dom';
+import { useFilterContext } from '../context/filter_context';
 
-const ProductList = ({ paginatedProducts }) => {
+const ProductList = () => {
   const history = useHistory();
-  const [gridView, setGridView] = useState(true);
+  const {
+    filtered_products,
+    paginated_filtered_products: paginatedProducts,
+    grid_view,
+  } = useFilterContext();
   const [pageNum, setPageNum] = useState(0);
   const [productsPerPage, setProductsPerPage] = useState([]);
 
@@ -39,7 +44,7 @@ const ProductList = ({ paginatedProducts }) => {
     setPageNum(index);
   };
 
-  if (paginatedProducts.length < 1) {
+  if (filtered_products.length < 1) {
     return (
       <p className="text-center text-xl">
         Sorry, no products matched your search...
@@ -47,7 +52,7 @@ const ProductList = ({ paginatedProducts }) => {
     );
   }
 
-  if (gridView === false) {
+  if (grid_view === false) {
     return (
       <div>
         <ListView products={productsPerPage} />
@@ -56,7 +61,7 @@ const ProductList = ({ paginatedProducts }) => {
             {/* Prev btn */}
             <button
               onClick={prevPage}
-              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md hover:bg-tertiary-50 dark:bg-gray-900 dark:text-gray-600"
+              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md hover:bg-tertiary-50 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +90,7 @@ const ProductList = ({ paginatedProducts }) => {
             {/* Next btn */}
             <button
               onClick={nextPage}
-              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md hover:bg-tertiary-50 dark:bg-gray-900 dark:text-gray-600"
+              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md hover:bg-tertiary-50 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +107,7 @@ const ProductList = ({ paginatedProducts }) => {
     );
   }
 
-  if (gridView === true)
+  if (grid_view === true)
     return (
       <div>
         <GridView products={productsPerPage} />
@@ -111,7 +116,7 @@ const ProductList = ({ paginatedProducts }) => {
             {/* Prev btn */}
             <button
               onClick={prevPage}
-              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md hover:bg-tertiary-50 dark:bg-gray-900 dark:text-gray-600"
+              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md hover:bg-tertiary-50  "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -11,6 +11,9 @@ import ProfilePage from './ProfilePage';
 import OrderListPage from './OrderListPage';
 import ProductListPage from './ProductListPage';
 import UserListPage from './UserListPage';
+import ErrorPage from './ErrorPage';
+import ProductEditPage from './ProductEditPage';
+import UserEditPage from './UserEditPage';
 export {
   HomePage,
   ProductsPage,
@@ -25,4 +28,7 @@ export {
   OrderListPage,
   ProductListPage,
   UserListPage,
+  ErrorPage,
+  ProductEditPage,
+  UserEditPage,
 };

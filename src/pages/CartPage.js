@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import Btn from '../components/Btn';
 import CartContent from '../components/CartContent';
 import PageHero from '../components/PageHero';
-import { cart } from '../data';
+import { useCartContext } from '../context/cart_context';
+
 
 const CartPage = () => {
+  const { cart } = useCartContext();
+
   if (cart.length < 1) {
     return (
       <div className=" h-screen ">

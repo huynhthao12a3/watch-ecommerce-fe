@@ -1,38 +1,38 @@
-import featured1 from './assets/img/product1.png';
-import featured2 from './assets/img/product2.png';
-import featured3 from './assets/img/product3.png';
-import featured4 from './assets/img/product4.png';
-import newProduct1 from './assets/img/PearlMaster.png';
-import newProduct2 from './assets/img/DateJust31.png';
-import newProduct3 from './assets/img/DateJust36.png';
-import newProduct4 from './assets/img/Lady-DateJust.png';
-import newProduct5 from './assets/img/CosmoGraph.png';
-import newProduct6 from './assets/img/CelliniMoonphase.png';
-import newProduct7 from './assets/img/OysterPerpetual.png';
-import newProduct8 from './assets/img/SkyDweller.png';
+import featured1 from './assets/img/hero-1.png';
+import featured2 from './assets/img/hero-1.png';
+import featured3 from './assets/img/hero-1.png';
+import featured4 from './assets/img/hero-1.png';
+import newProduct1 from './assets/img/hero-1.png';
+import newProduct2 from './assets/img/hero-1.png';
+import newProduct3 from './assets/img/hero-1.png';
+import newProduct4 from './assets/img/hero-1.png';
+import newProduct5 from './assets/img/hero-1.png';
+import newProduct6 from './assets/img/hero-1.png';
+import newProduct7 from './assets/img/hero-1.png';
+import newProduct8 from './assets/img/hero-1.png';
 
-import product1 from './assets/img/CelliniMoonphase.png';
-import product2 from './assets/img/OysterPerpetual.png';
-import product3 from './assets/img/SkyDweller.png';
-import product4 from './assets/img/Day-Date-40.png';
-import product5 from './assets/img/SkyDweller.png';
-import product6 from './assets/img/PearlMaster.png';
-import product7 from './assets/img/DateJust31.png';
-import product8 from './assets/img/DateJust36.png';
-import product9 from './assets/img/Lady-DateJust.png';
-import product10 from './assets/img/CosmoGraph.png';
-import product11 from './assets/img/CelliniMoonphase.png';
-import product12 from './assets/img/OysterPerpetual.png';
-import product13 from './assets/img/SkyDweller.png';
-import product14 from './assets/img/Day-Date-40.png';
-import product15 from './assets/img/PearlMaster.png';
-import product16 from './assets/img/DateJust31.png';
-import product17 from './assets/img/DateJust36.png';
-import product18 from './assets/img/Lady-DateJust.png';
-import product19 from './assets/img/CosmoGraph.png';
-import product20 from './assets/img/DateJust36.png';
-import product21 from './assets/img/Lady-DateJust.png';
-import product22 from './assets/img/CosmoGraph.png';
+import product1 from './assets/img/hero-1.png';
+import product2 from './assets/img/hero-1.png';
+import product3 from './assets/img/hero-1.png';
+import product4 from './assets/img/hero-1.png';
+import product5 from './assets/img/hero-1.png';
+import product6 from './assets/img/hero-1.png';
+import product7 from './assets/img/hero-1.png';
+import product8 from './assets/img/hero-1.png';
+import product9 from './assets/img/hero-1.png';
+import product10 from './assets/img/hero-1.png';
+import product11 from './assets/img/hero-1.png';
+import product12 from './assets/img/hero-1.png';
+import product13 from './assets/img/hero-1.png';
+import product14 from './assets/img/hero-1.png';
+import product15 from './assets/img/hero-1.png';
+import product16 from './assets/img/hero-1.png';
+import product17 from './assets/img/hero-1.png';
+import product18 from './assets/img/hero-1.png';
+import product19 from './assets/img/hero-1.png';
+import product20 from './assets/img/hero-1.png';
+import product21 from './assets/img/hero-1.png';
+import product22 from './assets/img/hero-1.png';
 import paginator from './utils/paginator';
 
 export const filteredProducts = [
@@ -63,7 +63,7 @@ export const filteredProducts = [
   },
   {
     id: 3,
-    name: 'Sky-Dweller',
+    name: 'Sky Dweller',
     price: 3000,
     description: `A fixed inverted red triangle on the dial points to the chosen reference time,the time at home or at the travellers usual workplace,on the off-centre 24-hour disc. At a glance, this 24-hour display clearly distinguishes daytime hours from night-time hours in the other time zone. The dials now feature rectangular index hour markers and longer hands, as well as a Chromalight display with long-lasting luminescence, which enhances legibility.`,
     brand: 'rolex',
@@ -126,7 +126,7 @@ export const filteredProducts = [
   },
   {
     id: 8,
-    name: 'DateJust 36',
+    name: 'Date Just 36',
     price: 2000,
     description:
       'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of Rolex gem-setting: the precise alignment of the height of the gems, their orientation and position, the regularity, strength and proportions of the setting as well as the intricate finishing of the metalwork.',
@@ -139,7 +139,7 @@ export const filteredProducts = [
   },
   {
     id: 9,
-    name: 'Lady-Datejust',
+    name: 'Lady Date Just',
     price: 2000,
     description:
       'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of Rolex gem-setting: the precise alignment of the height of the gems, their orientation and position, the regularity, strength and proportions of the setting as well as the intricate finishing of the metalwork.',
@@ -1352,3 +1352,260 @@ export const users = [
 ];
 
 export const paginatedUsers = paginator([...users]);
+
+
+export const products = [
+  {
+    name: 'Cellini Moonphase',
+    price: 10000,
+    description:
+      'The Cellini Moonphase has a white lacquer dial with a blue enamelled disc at 6 showing the full moon and the new moon, the former depicted by a meteorite applique and the latter by a silver ring. The Cellini Moonphase also displays the date around the circumference of the dial, via a centre hand with a crescent moon at its tip.',
+    image: '/uploads/CelliniMoonphase.png',
+    brand: 'rolex',
+    category: 'men',
+    featured: true,
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+  {
+    name: 'Oyster Perpetual',
+    price: 20000,
+    description:
+      'The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial. Light is diffused consistently along each engraving, creating a characteristic subtle glow that moves depending on the position of the wrist.',
+    image: '/uploads/OysterPerpetual.png',
+    brand: 'rolex',
+    category: 'men',
+    featured: true,
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+  {
+    name: 'Sky Dweller',
+    price: 30000,
+    description: `A fixed inverted red triangle on the dial points to the chosen reference time,the time at home or at the travellers usual workplace,on the off-centre 24-hour disc. At a glance, this 24-hour display clearly distinguishes daytime hours from night-time hours in the other time zone.`,
+    image: '/uploads/SkyDweller.png',
+    brand: 'rolex',
+    category: 'men',
+    featured: true,
+
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+  {
+    name: 'Day Date 40',
+    price: 10000,
+    description:
+      'The Rolex fluted bezel is a mark of distinction. Originally, the fluting of the Oyster bezel had a functional purpose: it served to screw the bezel onto the case helping to ensure the waterproofness of the watch. It was therefore identical to the fluting on the case back, which was also screwed onto the case for waterproofness, using specific Rolex tools. Over time, the fluting became an aesthetic element, a genuine Rolex signature feature. Today the fluted bezel is a mark of distinction, always in gold.',
+    image: '/uploads/DayDate40.png',
+    brand: 'rolex',
+    category: 'men',
+    featured: true,
+
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+  {
+    name: 'Cosmograph Daytona',
+    price: 30000,
+    description: `A fixed inverted red triangle on the dial points to the chosen reference time,the time at home or at the travellers usual workplace,on the off-centre 24-hour disc. At a glance, this 24-hour display clearly distinguishes daytime hours from night-time hours in the other time zone.`,
+    brand: 'rolex',
+    category: 'men',
+    image: '/uploads/CosmographDaytona.png',
+
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+
+  {
+    name: 'Pearl Master',
+    price: 10000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of Rolex gem-setting.',
+    brand: 'rolex',
+    category: 'women',
+    image: '/uploads/PearlMaster.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'Date Just 31',
+    price: 10000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of Rolex gem-setting.',
+    brand: 'rolex',
+    category: 'women',
+    image: '/uploads/DateJust31.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'Date Just 36',
+    price: 20000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of Rolex gem-setting.',
+    brand: 'rolex',
+    category: 'women',
+
+    image: '/uploads/DateJust36.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'Lady Date Just',
+    price: 20000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of Rolex gem-setting.',
+    brand: 'rolex',
+    category: 'women',
+
+    image: '/uploads/LadyDateJust.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'Moonlight',
+    price: 20000,
+    description:
+      'The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial. Light is diffused consistently along each engraving, creating a characteristic subtle glow.',
+    brand: 'rolex',
+    category: 'women',
+
+    image: '/uploads/MoonLight.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+
+  {
+    name: 'Dazzling Moon',
+    price: 10000,
+    description:
+      'The Dazzling Moon has a white lacquer dial with a blue enamelled disc at 6 showing the full moon and the new moon, the former depicted by a meteorite applique and the latter by a silver ring. The Dazzling Moon also displays the date around the circumference of the dial, via a centre hand with a crescent moon at its tip.',
+    brand: 'Jaeger',
+    category: 'women',
+    image: '/uploads/DazzlingMoon.png',
+
+    colors: ['#3F5091', '#ece6db'],
+  },
+  {
+    name: 'Jewellery Moon',
+    price: 20000,
+    description:
+      'The sunray finish creates delicate light reflections on many dials in the Jewellery Moon collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial. Light is diffused consistently along each engraving, creating a characteristic subtle glow that moves depending on the position of the wrist.',
+    brand: 'Jaeger',
+    category: 'women',
+    image: '/uploads/JewellyMoon.png',
+    colors: ['#ece6db', '#A5B5BF', '#D4AF37'],
+  },
+
+  {
+    name: 'Night & Day',
+    price: 30000,
+    description: `A fixed inverted red triangle on the dial points to the chosen reference time,the time at home or at the travellers usual workplace,on the off-centre 24-hour disc. At a glance, this 24-hour display clearly distinguishes daytime hours from night-time hours in the other time zone.`,
+    brand: 'Jaeger',
+    category: 'women',
+    image: '/uploads/NightAndDay.png',
+
+    colors: ['#ece6db', '#000', '#E1D5CB'],
+  },
+  {
+    name: 'Rendezvous',
+    price: 10000,
+    description:
+      'The Redezvous fluted bezel is a mark of distinction. Originally, the fluting of the Oyster bezel had a functional purpose: it served to screw the bezel onto the case helping to ensure the waterproofness of the watch. It was therefore identical to the fluting on the case back, which was also screwed onto the case for waterproofness, using specific Jaeger tools.',
+    brand: 'Jaeger',
+    category: 'women',
+    image: '/uploads/Rendezvous.png',
+
+    colors: ['#ece6db', '#000', '#506783'],
+  },
+  {
+    name: 'Tour Billon',
+    price: 10000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of gem-setting.',
+    brand: 'Jaeger',
+    category: 'men',
+    image: '/uploads/TourBillon.png',
+    colors: ['#ece6db', '#000', '#506783'],
+  },
+
+  {
+    name: 'Baloon Blue',
+    price: 10000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of gem-setting.',
+    brand: 'cartier',
+    category: 'men',
+
+    image: '/uploads/BaloonBlue.png',
+
+    colors: ['#ece6db', '#000', '#506783'],
+  },
+  {
+    name: 'Baloon Blue 100',
+    price: 20000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of gem-setting.',
+    brand: 'cartier',
+    category: 'women',
+
+    image: '/uploads/BaloonBlue100.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'Ronde Solo',
+    price: 20000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of gem-setting.',
+    brand: 'cartier',
+    category: 'men',
+
+    image: '/uploads/RondeSolo.png',
+
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+  {
+    name: 'Santos',
+    price: 20000,
+    description:
+      'The sunray finish creates delicate light reflections on many dials in the collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial. Light is diffused consistently along each engraving, creating a characteristic subtle glow that moves depending on the position of the wrist.',
+    brand: 'cartier',
+    category: 'men',
+
+    image: '/uploads/Santos.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'Santos Dumo',
+    price: 20000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of gem-setting.',
+    brand: 'cartier',
+    category: 'men',
+
+    image: '/uploads/SantosDumo.png',
+
+    colors: ['#ece6db', '#000', '#506783'],
+  },
+  {
+    name: 'Santoz Dumo 100',
+    price: 20000,
+    description:
+      'The diamond-paved dials are a sparkling symphony to enhance the watch and enchant the wearer. Gem-setters finely carve the precious metal to hand-shape the seat in which each gemstone will be perfectly lodged. Besides the intrinsic quality of the stones, several other criteria contribute to the beauty of gem-setting.',
+    brand: 'cartier',
+    category: 'women',
+
+    image: '/uploads/SantosDumo100.png',
+
+    colors: ['#ece6db', '#E0BFB8', '#D4AF37'],
+  },
+  {
+    name: 'TankMC Light',
+    price: 20000,
+    description:
+      'The sunray finish creates delicate light reflections on many dials in the collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial. Light is diffused consistently along each engraving, creating a characteristic subtle glow that moves depending on the position of the wrist.',
+    brand: 'cartier',
+    category: 'men',
+
+    image: '/uploads/TankMc.png',
+
+    colors: ['#ece6db', '#000', '#D4AF37'],
+  },
+];
