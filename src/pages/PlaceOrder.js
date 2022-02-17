@@ -51,7 +51,13 @@ const PlaceOrder = ({ history }) => {
       userDetailsReset();
       orderCreateReset();
     }
-  }, [history, createOrderSuccess]);
+    if (createOrderError) {
+      setTimeout(() => {
+        orderCreateReset();
+        history.push('/');
+      }, 3000);
+    }
+  }, [history, createOrderSuccess, createOrderError]);
 
   return (
     <section className=" min-h-screen bg-amber-50">
