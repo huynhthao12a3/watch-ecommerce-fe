@@ -33,32 +33,25 @@ const SingleProductPage = () => {
   } = useProductsContext();
   const { loginUser } = useUserContext();
 
+  const singleProductUrl = `/api/v1/products/${id}`;
+  
   useEffect(() => {
-    const singleProductUrl = `/api/v1/products/${id}`;
+    fetchSingleProduct(singleProductUrl);
     if (createdProductReview) {
       setRating(0);
       setComment('');
       setTitle('');
-      fetchSingleProduct(singleProductUrl);
-      createReviewReset();
     }
-
-    fetchSingleProduct(singleProductUrl);
-    createReviewReset();
   }, [id, createdProductReview]);
 
   useEffect(() => {
-    if (createProductReviewError) {
-      setRating(0);
-      setComment('');
-      setTitle('');
-    }
-    if (error) {
+    if (error || createProductReviewError) {
       setTimeout(() => {
-        history.push('/');
-      }, 3000);
+        history.push('/products');
+        fetchSingleProductsReset();
+        createReviewReset();
+      }, 2000);
     }
-    fetchSingleProductsReset();
   }, [error, createProductReviewError]);
 
   const submitHandler = e => {
